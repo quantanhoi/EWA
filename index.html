@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza Bestellung</title>
+    <style>
+        .pizza-desc {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 20px;
+        }
+
+        .square-block {
+            width: 50%;
+            height: 300px;
+            position: relative;
+            border: 1px solid black;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            gap: 5px;
+            margin: 20px;
+
+        }
+        .verpackung {
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .square-block>*:not(:first-child) {
+            margin: 15px;
+        }
+
+        .line-text {
+            margin: 0px;
+            position: absolute;
+            top: 0%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 0 10px;
+        }
+
+        .info-block {
+            height: 150px;
+            width: 150px;
+            overflow: auto;
+            border: 1px solid black;
+
+        }
+
+        .button {
+
+            width: 100px;
+            font-family: Arial, sans-serif;
+            color: black;
+            border: 3px;
+            padding: 3px;
+        }
+
+        .price {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Papa Giovanni-Pietro's Pizza</h1>
+    <ul>
+        <li><a href=''>Übersicht</a></li>
+        <li><a href=''>Bestellung</a></li>
+        <li><a href=''>Bäcker</a></li>
+        <li><a href=''>Lieferant</a></li>
+    </ul>
+    <h2>Speisekarte
+    </h2>
+    <div style="display: flex; flex-direction: row;">
+        <div class="pizza-desc">
+            <img src="pizza.png" alt="pizza pic" width="150" height="150">
+            <p>Margherita: 8.00 €</p>
+        </div>
+        <div class="pizza-desc">
+            <img src="pizza.png" alt="pizza pic" width="150" height="150">
+            <p>Hawaii: 11.00 €</p>
+        </div>
+        <div class="pizza-desc">
+            <img src="pizza.png" alt="pizza pic" width="150" height="150">
+            <p>Quattro Formaggi: 10.00 €</p>
+        </div>
+    </div>
+    <h2>Warenkorb</h2>
+    <div class="square-block">
+        <span class="line-text">Aktuelle Auswahl</span>
+        <div class="info-block">
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+            <p>Margherita</p>
+
+        </div>
+        <button class="button">Auswahl löschen</button>
+        <p class="price">Gesamtpreis: xx €</p>
+
+    </div>
+    <div class="square-block verpackung">
+        <p class="line-text">Verpackungswunsch</p>
+        <label>
+            <input type="checkbox">
+            Einweg
+        </label>
+        <label>
+            <input type="checkbox">
+            Mehrweg
+        </label>
+        <label>
+            <input type="checkbox">
+            Ohne
+        </label>
+        
+    </div>
+
+</body>
+
+</html>

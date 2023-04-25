@@ -1,0 +1,70 @@
+.pizza-desc {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 20px;
+}
+
+.square-block {
+    width: 50%;
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+
+}
+.verpackung {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.square-block>*:not(:first-child) {
+    margin: 15px;
+}
+
+.line-text {
+    margin: 0px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px;
+}
+
+.info-block {
+    height: 150px;
+    width: 150px;
+    overflow: auto;
+    border: 1px solid black;
+
+}
+
+.button {
+
+    width: 100px;
+    font-family: Arial, sans-serif;
+    color: black;
+    border: 3px;
+    padding: 3px;
+}
+
+.price {
+    color: black;
+}
+.button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+.button-container>* {
+    margin: 15px;
+}

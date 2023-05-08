@@ -32,7 +32,8 @@ for (let i = 0; i < items.length; i++) {
         totalPrice.textContent = `Gesamtpreis: ${total.toFixed(2)} €`;
     });
 }
-auswahlLoeschen.addEventListener('click', function() {
+auswahlLoeschen.addEventListener('click', function(e) {
+    e.preventDefault();
     total = 0;
     totalPrice.textContent = `Gesamtpreis: ${total.toFixed(2)} €`;
     infoBlock.innerHTML= '';
